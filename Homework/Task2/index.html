@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Application for permission to date my daughter">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!--Burda formu divin icine alib dive style vermeyim duzdu?
+    yoxsa form'un birbasha ozune vere bilerdim? ve sebeb-->
+    <div class="container">
+        <form>
+            <h1>Application For Permission To Date My Daughter</h1>
+            <p><span>Note:</span> Form is to be completed at least 21 days prior to date</p>
+            <fieldset>
+                <legend>Personel Details</legend>
+                <div class="in-order align-div">
+                    <label for="name" class="personal-details">
+                        Name: 
+                        <input type="text" placeholder="Enter name here" id="name" name="name">
+                    </label>
+                    <label for="address" class="personal-details">
+                        Address: 
+                        <input type="text" placeholder="Enter address here" id="address" name="address">
+                    </label>
+                    <label for="email" class="personal-details">
+                        Email: 
+                        <input type="email" placeholder="Enter email here" id="email" name="email">
+                    </label>
+                    <label for="tel" class="personal-details">
+                        Phone Number: 
+                        <input type="tel" placeholder="Enter 10 digit number" id="tel" name="tel">
+                    </label>
+                    <label for="iq" class="personal-details">
+                        IQ: 
+                        <input type="text" placeholder="Enter IQ here" id="iq" name="iq">
+                    </label>
+                </div>
+                <div class="in-order align-div">
+                    <label>Gender</label>
+                    <label for="male">
+                        <input type="radio" id="male" name="gender" value="male">
+                        Male
+                    </label>
+                    <label for="female">
+                        <input type="radio" id="female" name="gender" value="female">
+                        Female
+                    </label>
+                    <label for="other">
+                        <input type="radio" id="other" name="gender" value="other">
+                        Other
+                    </label>
+                </div>
+                <div class="align-div"> 
+                    <label for="date">
+                        Date of Proposed Outing:
+                        <input type="date" id="date" name="date">
+                    </label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <div class="in-order">
+                    <label>Check All That Apply</label>
+                    <label for="choose-1">
+                        <input type="checkbox" id="choose-1" value="tatoo-piercing" name="tatoo-piercing">
+                        I have tattoos and/or piercings
+                    </label>
+                    <label for="choose-2">
+                        <input type="checkbox" id="choose-2" value="older" name="older">
+                        I am more than 2 years older than my daughter
+                    </label>
+                    <label for="choose-3">
+                        <input type="checkbox" id="choose-3" value="van-V8" name="van-V8">
+                        I own panel van or V8 ute
+                    </label>
+                    <label for="choose-4">
+                        <input type="checkbox" id="choose-4" value="work" name="work">
+                        I work full-time
+                    </label>
+                    <label for="choose-5">
+                        <input type="checkbox" id="choose-5" value="rich" name="rich">
+                        My parents are rich
+                    </label>
+                    <label for="choose-6">
+                        <input type="checkbox" id="choose-6" value="public-location" name="public-location">
+                        Is the date at the well lit public location
+                    </label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <div>
+                    <div class="display ">
+                        <label for="political-persuasion">Political Persuasion</label>
+                        <select name="political-persuasion" id="political-persuasion">
+                            <option value="left-wing">Left Wing</option>
+                            <option value="right-wing">Right Wing</option>
+                        </select>
+                    </div>
+                    <div class="display ">
+                        <label for="education">Education Level Completed</label>
+                        <select name="education" id="education">
+                            <option value="preschool">Preschool</option>
+                            <option value="elementary-school">School</option>
+                            <option value="bachelor" selected>Bachelor's Degree</option>
+                            <option value="master">Master's Degree</option>
+                            <option value="doctoral">Doctoral Degree</option>
+                        </select>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Essay Section</legend>
+                <div class="in-order align-essay">
+                    <label for="explain">In 50 words or more explain why you want to date my daughter</label>
+                    <textarea name="explain" id="explain" placeholder="Enter text here"></textarea>
+                </div>
+                <div class="in-order align-essay">
+                    <label for="contact">Please upload contact details for 2 references</label>
+                    <textarea name="contact" id="contact" placeholder="Enter text here"></textarea>
+                </div>
+                <div>
+                    <label for="file">
+                        Upload Police Clearance Certification, Bank Statement and Medical Certifiates here:
+                        <label class="button">
+                            Attach Files
+                            <input style="display: none;" type="file" id="file" name="file">
+                        </label>
+                    </label>
+                </div>
+            </fieldset>
+            <button type="submit" class="button" >Send Your Application</button>
+        </form>
+    </div>
+    
+</body>
+</html>
